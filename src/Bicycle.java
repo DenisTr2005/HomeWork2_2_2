@@ -5,7 +5,7 @@ public class Bicycle extends Transport {
     @Override
     public void check() {
         for (int i = 0; i < getWheelsCount(); i++) {
-            System.out.println("Меняем покрышку велосипеда");
+            System.out.println("Меняем покрышку");
         }
     }
 }
