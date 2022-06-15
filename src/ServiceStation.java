@@ -1,10 +1,7 @@
 public class ServiceStation {
     public void check(Transport transport) {
-        System.out.println("\nОбслуживаем " + transport.getModelName());
-            for (int i = 0; i < transport.getWheelsCount(); i++) {
-                transport.updateTyre();
-            }
-            transport.checkEngine();
-            transport.checkTrailer();
+        System.out.println("Обслуживаем " + transport.getModelName());
+        transport.check();
+        System.out.println("Обслуживание " + transport.getModelName() + " закончено \n");
     }
 }
