@@ -1,4 +1,4 @@
-public abstract class Transport {
+public abstract class Transport implements Service {
     private final String modelName;
     private final int wheelsCount;
 
@@ -6,8 +6,6 @@ public abstract class Transport {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
-
-    abstract void check();
     public String getModelName() {
         return modelName;
     }
